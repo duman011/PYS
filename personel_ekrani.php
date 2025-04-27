@@ -15,9 +15,9 @@ if (isset($_POST['logout'])) {
     // Çıkış yapıldığında giris_yapildi'yi 0 yap
     $sql = "UPDATE calisanlar SET giris_yapildi = 0 WHERE giris_yapildi = 1 LIMIT 1";
     if ($conn->query($sql)) {
-        // Oturumdan çıkış yap ve acilis.php'ye yönlendir
+        // Oturumdan çıkış yap ve index.php'ye yönlendir
         session_destroy();
-        header("Location: acilis.php");
+        header("Location: index.php");
         exit();
     } else {
         echo "Hata oluştu: " . $conn->error;

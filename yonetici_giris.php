@@ -147,7 +147,7 @@ $conn->close();
         </form>
 
         <div class="buttons-container">
-             <button type="button" class="back-button" onclick="window.location.href='acilis.php';">Geri Git</button> 
+             <button type="button" class="back-button" onclick="window.location.href='index.php';">Geri Git</button> 
              <button type="button" class="add-button" onclick="window.location.href='admin_ekle.php';">Admin Ekle</button> 
         </div>
 
